@@ -10,13 +10,20 @@
     <ImageView
         android:id="@+id/image"
         android:src="@drawable/background1"
-        android:layout_width="50dp"
-        android:layout_height="50dp" />
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1.01" />
 
     <Button
         android:text="改变text的值"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button" />
+
+    <Button
+        android:id="@+id/button_new_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
 </LinearLayout>
 
