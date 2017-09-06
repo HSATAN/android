@@ -3,7 +3,6 @@ package com.example.edison.newworld;
 /**
  * Created by huangkaijie on 2017/9/5.
  */
-
 public class Util {
 
     private static String[] nameArray = new String[]{

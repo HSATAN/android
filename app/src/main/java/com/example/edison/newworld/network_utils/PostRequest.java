@@ -1,7 +1,9 @@
-package scut.carson_ho.retrofitdemo;
+package com.example.edison.newworld.network_utils;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import com.example.edison.newworld.R;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -18,7 +20,7 @@ public class PostRequest extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_weather);
 
         request();
     }

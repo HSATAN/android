@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import okhttp3.OkHttpClient;
 
 /**
  * Created by huangkaijie on 2017/9/5.
@@ -24,5 +25,7 @@ public class ItemActivity extends Activity {
         ButterKnife.bind(this);
         rvTextList.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
         rvTextList.setAdapter(new TextListAdapter(this));
+
+
     }
 }
