@@ -1,9 +1,14 @@
 package com.example.edison.newworld.network_utils;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
+import com.example.edison.newworld.NewActivity;
 import com.example.edison.newworld.R;
+import com.example.edison.newworld.activity.TestActivity;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -12,12 +17,19 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class GetRequest extends AppCompatActivity {
-
+    private Button test_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
-
+        test_button=(Button)findViewById(R.id.button_test);
+        test_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(GetRequest.this, TestActivity.class);
+                startActivity(intent);
+            }
+        });
         request();
     }
     public void request() {

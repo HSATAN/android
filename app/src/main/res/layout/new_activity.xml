@@ -34,4 +34,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="retrofit_activity" />
+
+    <Button
+        android:id="@+id/button_new_activity_retrofit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button_file_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取文件路径" />
 </LinearLayout>
