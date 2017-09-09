@@ -29,7 +29,7 @@ public class FileActivity extends Activity {
         button=(Button)findViewById(R.id.button_file);
         textView=(TextView)findViewById(R.id.file_textview);
         editText=(EditText)findViewById(R.id.file_edit);
-        editText.setText(Environment.getExternalStorageDirectory().toString()+"/world/");
+        editText.setText(Environment.getExternalStorageDirectory().toString()+"/相机/");
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

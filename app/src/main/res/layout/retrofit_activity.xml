@@ -49,7 +49,7 @@
         android:id="@+id/post_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.24"
+        android:layout_weight="0.18"
         android:text="post方式获取数据" />
 
     <Button
@@ -58,4 +58,11 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.24"
         android:text="上传文件" />
+
+    <Button
+        android:id="@+id/button_blog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取blog" />
+
 </LinearLayout>
